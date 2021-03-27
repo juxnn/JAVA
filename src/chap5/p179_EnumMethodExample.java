@@ -30,7 +30,17 @@ public class p179_EnumMethodExample {
 			}
 		}
 		
-		//values()메소드
+		if(args.length==1) {
+			String strDay = args[0];
+			Week weekDay = Week.valueOf(strDay);
+			if(weekDay == Week.SATURDAY || weekDay == Week.SUNDAY) {
+				System.out.println("주말");
+			}else {
+				System.out.println("평일");
+			}
+			
+		}
+			
 		Week[] days = Week.values();
 		for(Week day: days) {
 			System.out.println(day);
