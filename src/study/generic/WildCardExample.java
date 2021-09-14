@@ -9,7 +9,12 @@ public class WildCardExample {
 
 		public Person(String type) {
 			this.type = type;
-		}		
+		}
+		
+		@Override
+		public String toString() {
+			return type;
+		}
 	}
 	
 	public static class Student extends Person{
