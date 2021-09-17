@@ -60,7 +60,7 @@ public class Code07 {
 		}
 		kb.close();
 	}
-
+ 
 	private static int find(char name) {
 		for(int i =0; i<n; i++)
 			if(polys[i].name == name)
