@@ -11,7 +11,7 @@ public class PressNewKeypad {
 			String answer = "";
 			
 			for(int i =0; i<numbers.length; i++) {
-				if(numbers[i] == 0) {												//계산을 위해 0을 11로 설정한다.
+				if(numbers[i] == 0) {											//계산을 위해 0을 11로 설정한다.
 					numbers[i] = 11;
 				}
 				if(numbers[i] == 1 || numbers[i] == 4 || numbers[i] == 7) {		//1,4,7은 왼손이 누른다.
@@ -32,10 +32,10 @@ public class PressNewKeypad {
 						positionL = numbers[i];									//왼손의 위치가 포인트로
 						answer += "L";
 					}else {														//두 손의 거리가 동일할 때
-						if(hand == "right") {
+						if(hand.equals("right")) {
 							positionR = numbers[i];								//오른손 잡이면 오른손으로
 							answer += "R";										
-						}else if(hand == "left") {
+						}else if(hand.equals("left")) {
 							positionL = numbers[i];								//왼손 잡이면 오른손으로
 							answer += "L";
 						}
