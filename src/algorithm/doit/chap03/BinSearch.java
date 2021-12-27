@@ -33,8 +33,7 @@ public class BinSearch {
 		System.out.print("x[0]: ");	//첫 요소 입력
 		x[0] = stdIn.nextInt();
 		
-		for(int i=1; i<num; i++) {
-			
+		for(int i=1; i<num; i++) {	
 			do {
 				System.out.print("x[" + i + "]: ");
 				x[i] = stdIn.nextInt();
