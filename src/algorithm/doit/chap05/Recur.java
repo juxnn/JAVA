@@ -26,7 +26,6 @@ public class Recur {
 	//꼬리 재귀와는 다르게, 앞에서 호출한 재귀 메서드의 제거는 쉽지 않다.
 	//잠시 '저장'을 해야 하는 개념이 있기 때문이다.
 	//이 때 이런 문제를 잘 해결할 수 있는 데이터구조가 바로 앞장에서 살펴본 스택(stack)이다.
-	
 	static void recur3(int n) {
 		IntStack s = new IntStack(n);
 		
@@ -46,6 +45,13 @@ public class Recur {
 		}
 	}
 	
+	//연습문제 Q5. P182
+	static void recur4(int n) {
+	//단단히 잘못생각했다.
+	//stack을 2개 써서 풀더라. 정답을 보니까.
+	
+	}
+	
 	public static void main(String[] args) {
 		
 		Scanner stdIn = new Scanner(System.in);
@@ -53,7 +59,7 @@ public class Recur {
 		System.out.print("정수를 입력하세요 : ");
 		int x = stdIn.nextInt();
 		
-		recur(x);
+		recur4(x);
 		
 		stdIn.close();
 	}
