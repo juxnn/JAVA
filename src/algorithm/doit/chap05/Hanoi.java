@@ -14,7 +14,8 @@ public class Hanoi {
 		if(no>1)
 			move(no-1, 6-x-y, y);
 	}
-	
+	//이 프로그램은 기둥 번호를 정수 1,2,3으로 나타낸다.
+	//기둥 번호의 합이 6 이므로 시작 기둥, 목표기둥이 어느 기둥이더라도 중간기둥은 6-x-y로 구할 수 있다.
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 		
